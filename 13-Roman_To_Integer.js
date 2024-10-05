@@ -38,8 +38,8 @@ const obj= {
 }
 
 const s = "MCMXCIV";
-const arr = s.split('');
 
+console.log(arr);
 var total = 0;
 
 
