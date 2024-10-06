@@ -18,9 +18,9 @@ console.log(result.toString(2)); */
  * @return {string}
  */
 var addBinary = function(a, b) {
-    const bin1 = parseInt(a,2);
+   /*  const bin1 = parseInt(a,2);
     const bin2 = parseInt(b,2);
     const result = bin1 + bin2;
-    return result.toString(2);
-    //return (BigInt(`0b${a}`) + BigInt(`0b${b}`)).toString(2);
+    return result.toString(2); */
+    return (BigInt(`0b${a}`) + BigInt(`0b${b}`)).toString(2); // this is the bigInt literal function to return the binary addition
 };
