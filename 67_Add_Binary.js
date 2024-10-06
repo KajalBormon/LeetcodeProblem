@@ -22,4 +22,5 @@ var addBinary = function(a, b) {
     const bin2 = parseInt(b,2);
     const result = bin1 + bin2;
     return result.toString(2);
+    //return (BigInt(`0b${a}`) + BigInt(`0b${b}`)).toString(2);
 };
