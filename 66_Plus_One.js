@@ -1,19 +1,21 @@
 /* ----------Practice code---------- */
-/* const digits = [1,2,3,0];
-
-let index = digits.length-1;
-
-while(digits[index] === 9){
-    digits[index] = 0;
-    index--;
+//let digits = [0];
+var plusOne = function(digits){
+    for(let i=digits.length-1; i>=0; i--){
+        digits[i]++;
+        if(digits[i]>9){
+            return digits[i] = 0; 
+        }else{
+            return digits; 
+        }
+    }
+    //digits.unshift(1);
+    //return digits;
 }
-if(index == -1){
-    digits.unshift(1);
-}else{
-    digits[index]++;
-}
 
-console.log(digits); */
+console.log(plusOne([4,5,3,0]));
+
+
 
 
 /* ----------Leet code---------- */
@@ -21,7 +23,7 @@ console.log(digits); */
  * @param {number[]} digits
  * @return {number[]}
  */
-var plusOne = function(digits) {
+/* var plusOne = function(digits) {
     for(let i=digits.length-1; i>=0; i--){
         digits[i]++;
         if(digits[i]>9){
@@ -32,7 +34,7 @@ var plusOne = function(digits) {
     }
     digits.unshift(1);
     return digits;
-};
+}; */
 
 
 
